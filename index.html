@@ -1,113 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jay Ram Enterprise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jay Ram Enterprise</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        header {
-            background: #0d6efd;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-        header h1 {
-            margin: 0;
-        }
+body {
+    background: #0f172a;
+    color: white;
+}
 
-        .container {
-            padding: 20px;
-        }
+/* NAVBAR */
+/* NAVBAR CONTAINER */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #020617;
+}
 
-        .box {
-            background: white;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+/* BRAND SECTION */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
-        h2 {
-            color: #0d6efd;
-        }
+.brand img {
+    height: 55px;
+}
 
-        footer {
-            background: black;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
+/* COMPANY NAME */
+.brand h1 {
+    font-size: 22px;
+    color: #38bdf8;
+    margin: 0;
+}
 
-        a {
-            color: #0d6efd;
-            text-decoration: none;
-        }
+/* TAGLINE */
+.brand p {
+    font-size: 13px;
+    color: #cbd5f5;
+    margin-top: 2px;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background: #25D366;
-            color: white;
-            border-radius: 5px;
-        }
-    </style>
+/* NAV LINKS */
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+                url('hero.png') no-repeat center center/cover;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: 600;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.8);
+}
+
+.hero p {
+    font-size: 18px;
+    color: #e2e8f0;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #38bdf8;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 60px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ABOUT */
+.about {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    margin: 15px;
+    border-radius: 12px;
+    width: 260px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #1e293b;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* CONTACT */
+.contact p {
+    text-align: center;
+    margin: 10px;
+}
+
+/* MAP */
+.map {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 80px;
+    right: 25px;
+    width: 65px;
+    height: 65px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    z-index: 999;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp i {
+    font-size: 28px;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
+    100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>Jay Ram Enterprise</h1>
-    <p>Loading | Unloading | Helper Labour Contractor</p>
-</header>
+<nav class="top-nav">
 
-<div class="container">
+    <!-- LEFT SIDE (LOGO + NAME + TAGLINE) -->
+    <div class="brand">
+        <img src="logo.png" alt="Logo">
 
-    <div class="box">
-        <h2>About Us</h2>
-        <p>
-            Jay Ram Enterprise is a reliable labour contractor providing services in loading, unloading, and helper workforce. 
-            We ensure efficient and timely service with skilled manpower.
-        </p>
+        <div>
+            <h1>Jay Ram Enterprise</h1>
+            <p>Your Trusted Manpower Partner</p>
+        </div>
     </div>
 
-    <div class="box">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Loading Services</li>
-            <li>Unloading Services</li>
-            <li>Helper Labour Supply</li>
-            <li>Contract Labour Work</li>
-        </ul>
+    <!-- RIGHT SIDE (MENU) -->
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact Us</a>
     </div>
 
-    <div class="box">
-        <h2>Contact Us</h2>
-        <p><strong>📞 Phone:</strong> 9408687008</p>
-        <p><strong>📧 Email:</strong> Jayramenterprise25@yahoo.com</p>
-        <p><strong>📍 Address:</strong><br>
-            Office No - 109, JC Tower,<br>
-            Basera Road, Amli Fuhara,<br>
-            Silvassa - 396230, DNH & DD
-        </p>
+</nav>
 
-        <a class="btn" href="https://wa.me/919408687008" target="_blank">
-            Chat on WhatsApp
-        </a>
+<section class="hero">
+    <h1>Reliable Manpower Solutions</h1>
+    <p>Loading, Unloading & Labour Contractor Services</p>
+    <button class="btn" onclick="scrollToContact()">Contact Us</button>
+</section>
+
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <div class="about">
+        <p>Jay Ram Enterprise provides skilled manpower for industrial, construction, and logistics work.</p>
+        <p>We ensure reliable, disciplined, and hardworking labour for smooth business operations.</p>
     </div>
+</section>
 
-</div>
+<section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card">Loading & Unloading Services</div>
+        <div class="card">Helper Labour Supply</div>
+        <div class="card">Industrial Workforce</div>
+        <div class="card">Construction Labour</div>
+    </div>
+</section>
+
+<section id="gallery" class="section">
+    <h2>Our Work</h2>
+    <div class="gallery">
+        <img src="team1.png">
+        <img src="team2.png">
+        <img src="team3.png">
+    </div>
+</section>
+
+<section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p>📞 9408687008 | 7383774166 |</p>
+    <p>📧 jayramenterprise25@yahoo.com</p>
+    <p>📍 Shop No 1, Survey No 1530, Near Lakhdatar Plywood, Lawacha Pipariya,Silvassa,DNH&DD,396230</p>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.082904122614!2d72.9893754!3d20.296835299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0cdf34c6dd257%3A0x41725ea22e2c8d18!2sJAYRAM%20ENTERPRISE!5e0!3m2!1sen!2sin!4v1774898447626!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
 
 <footer>
-    <p>© 2026 Jay Ram Enterprise | All Rights Reserved</p>
+    <p>© 2026 Jay Ram Enterprise</p>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/919408687008" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+function scrollToContact() {
+    document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+}
+</script>
 
 </body>
 </html>
