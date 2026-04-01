@@ -29,6 +29,9 @@ body {
     align-items: center;
     padding: 15px 40px;
     background: #020617;
+    position: sticky;
+top: 0;
+z-index: 1000;
 }
 
 /* BRAND SECTION */
@@ -186,8 +189,9 @@ footer {
 /* WHATSAPP */
 .whatsapp {
     position: fixed;
-    bottom: 80px;
-    right: 25px;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
     width: 65px;
     height: 65px;
     background: #25D366;
@@ -240,6 +244,7 @@ footer {
         <a href="#services">Our Services</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact Us</a>
+        <a href="#careers">Work With Us</a>
     </div>
 
 </nav>
@@ -247,7 +252,9 @@ footer {
 <section class="hero">
     <h1>Reliable Manpower Solutions</h1>
     <p>Loading, Unloading & Labour Contractor Services</p>
-    <button class="btn" onclick="scrollToContact()">Contact Us</button>
+    <button class="btn" onclick="document.getElementById('careers').scrollIntoView({behavior:'smooth'})">
+Apply Now
+</button>
 </section>
 
 <section id="about" class="section">
@@ -279,15 +286,41 @@ footer {
 
 <section id="contact" class="section contact">
     <h2>Contact Us</h2>
-    <p>📞 9408687008 | 7383774166 |</p>
-    <p>📧 jayramenterprise25@yahoo.com</p>
+    <p style="text-align:center;">
+📞 
+<a href="tel:9408687008" style="color:#38bdf8; text-decoration:none;">9408687008</a> | 
+<a href="tel:7383774166" style="color:#38bdf8; text-decoration:none;">7383774166</a>
+</p>
+    <p style="text-align:center;">
+📧 
+<a href="mailto:jayramenterprises25@yahoo.com" 
+   style="color:#38bdf8; text-decoration:none;">
+   jayramenterprises25@yahoo.com
+</a>
+</p>
     <p>📍 Shop No 1, Survey No 1530, Near Lakhdatar Plywood, Lawacha Pipariya,Silvassa,DNH&DD,396230</p>
 
     <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.082904122614!2d72.9893754!3d20.296835299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0cdf34c6dd257%3A0x41725ea22e2c8d18!2sJAYRAM%20ENTERPRISE!5e0!3m2!1sen!2sin!4v1774898447626!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
+<section id="careers" class="section" style="background:#020617; text-align:center;">
+    
+    <h2>Work With Us</h2>
+    
+    <p style="max-width:600px; margin:0 auto 20px; color:#cbd5f5;">
+        Looking for job opportunities? Join Jay Ram Enterprise and become part of a trusted manpower team. 
+        We value dedication, discipline, and hard work.
+    </p>
 
+    <a href="https://forms.gle/do55cvvBiSR78VaQ7" target="_blank" 
+       style="display:inline-block; padding:14px 30px; background:#38bdf8; color:#000; 
+       font-size:18px; border-radius:10px; text-decoration:none; font-weight:600;">
+       
+       Apply Now 🚀
+    </a>
+
+</section>
 <footer>
     <p>© 2026 Jay Ram Enterprise</p>
 </footer>
