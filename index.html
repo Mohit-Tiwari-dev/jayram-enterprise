@@ -220,6 +220,43 @@ footer {
     70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
     100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
 }
+
+@media (max-width: 768px) {
+
+    /* Slightly reduce hero text */
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    /* Reduce section padding (not too much) */
+    .section {
+        padding: 60px 25px;
+    }
+
+    /* Keep cards SAME, just allow wrap */
+    .cards {
+        justify-content: center;
+    }
+
+    .card {
+        width: 220px;
+    }
+
+    /* Gallery adjust */
+    .gallery img {
+        width: 45%;
+    }
+
+    /* Map responsive */
+    .map iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
 </style>
 </head>
 
@@ -239,7 +276,7 @@ footer {
 
     <!-- RIGHT SIDE (MENU) -->
     <div class="nav-links">
-        <a href="#">Home</a>
+        <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'})">Home</a>
         <a href="#about">About Us</a>
         <a href="#services">Our Services</a>
         <a href="#gallery">Gallery</a>
