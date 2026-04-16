@@ -1,511 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Jay Ram Enterprise provides reliable manpower services including loading, unloading, and labour supply in Silvassa.">
-<meta name="keywords" content="manpower, labour contractor, Silvassa, loading unloading services">
-<title>Jay Ram Enterprise</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Jay Ram Enterprise provides reliable manpower services including loading, unloading, and labour supply in Silvassa.">
+    <meta name="keywords" content="manpower, labour contractor, Silvassa, loading unloading services">
+    <title>Jay Ram Enterprise</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-body {
-    background: #0f172a;
-    color: white;
-}
+        body {
+            background: #0f172a;
+            color: white;
+        }
 
-/* NAVBAR */
-/* NAVBAR CONTAINER */
-.top-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background: #020617;
-    position: sticky;
-top: 0;
-z-index: 1000;
-}
+        /* NAVBAR */
+        /* NAVBAR CONTAINER */
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: #020617;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-/* BRAND SECTION */
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
+        /* BRAND SECTION */
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
 
-.brand img {
-    height: 55px;
-}
+        .brand img {
+            height: 55px;
+        }
 
-/* COMPANY NAME */
-.brand h1 {
-    font-size: 22px;
-    color: #38bdf8;
-    margin: 0;
-}
+        /* COMPANY NAME */
+        .brand h1 {
+            font-size: 22px;
+            color: #38bdf8;
+            margin: 0;
+        }
 
-/* TAGLINE */
-.brand p {
-    font-size: 13px;
-    color: #cbd5f5;
-    margin-top: 2px;
-}
+        /* TAGLINE */
+        .brand p {
+            font-size: 13px;
+            color: #cbd5f5;
+            margin-top: 2px;
+        }
 
-/* NAV LINKS */
-.nav-links a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-size: 15px;
-}
+        /* NAV LINKS */
+        .nav-links a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 15px;
+        }
 
-.nav-links a:hover {
-    color: #38bdf8;
-}
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
 
-/* HERO */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+        /* HERO */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
 
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
                 url('hero.png') no-repeat center center/cover;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            font-weight: 600;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #e2e8f0;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: #38bdf8;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 80px 60px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* ABOUT */
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        /* CARDS */
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            margin: 15px;
+            border-radius: 12px;
+            width: 260px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #1e293b;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* CONTACT */
+        .contact p {
+            text-align: center;
+            margin: 10px;
+        }
+
+        /* MAP */
+        .map {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* WHATSAPP */
+        .whatsapp {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 65px;
+            height: 65px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            z-index: 999;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp:hover {
+    transform: translate(-50%) scale(1.1);
 }
+        .whatsapp i {
+            font-size: 28px;
+        }
 
-.hero h1 {
-    font-size: 55px;
-    font-weight: 600;
-    text-shadow: 0 5px 15px rgba(0,0,0,0.8);
-}
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
 
-.hero p {
-    font-size: 18px;
-    color: #e2e8f0;
-}
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
 
-.btn {
-    margin-top: 20px;
-    padding: 12px 30px;
-    background: #38bdf8;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-}
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
 
-/* SECTIONS */
-.section {
-    padding: 80px 60px;
-}
+        @media (max-width: 768px) {
 
-.section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
+            /* NAVBAR FIX */
+            .top-nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
 
-/* ABOUT */
-.about {
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-    line-height: 1.8;
-}
+            .nav-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
 
-/* CARDS */
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+            .nav-links a {
+                margin: 5px 10px;
+                font-size: 14px;
+            }
 
-.card {
-    background: rgba(255,255,255,0.05);
-    padding: 25px;
-    margin: 15px;
-    border-radius: 12px;
-    width: 260px;
-    transition: 0.3s;
-}
+            /* HERO FIX */
+            .hero {
+                padding: 20px;
+                height: auto;
+            }
 
-.card:hover {
-    transform: translateY(-10px);
-    background: #1e293b;
-}
+            .hero h1 {
+                font-size: 28px;
+                line-height: 1.3;
+            }
 
-/* GALLERY */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
+            .hero p {
+                font-size: 14px;
+            }
 
-.gallery img {
-    width: 300px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
-    transition: 0.3s;
-}
+            /* SECTION FIX */
+            .section {
+                padding: 40px 15px;
+            }
 
-.gallery img:hover {
-    transform: scale(1.05);
-}
+            /* CARDS FIX (IMPORTANT) */
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
 
-/* CONTACT */
-.contact p {
-    text-align: center;
-    margin: 10px;
-}
+            .card {
+                width: 90%;
+                max-width: 300px;
+            }
 
-/* MAP */
-.map {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    border-radius: 10px;
-    overflow: hidden;
-}
+            /* GALLERY FIX */
+            .gallery {
+                gap: 10px;
+            }
 
-/* FOOTER */
-footer {
-    background: #020617;
-    padding: 20px;
-    text-align: center;
-}
+            .gallery img {
+                width: 100%;
+                height: auto;
+            }
 
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 65px;
-    height: 65px;
-    background: #25D366;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    text-decoration: none;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-    z-index: 999;
-    animation: pulse 2s infinite;
-}
+            /* MAP FIX */
+            .map iframe {
+                width: 100%;
+                height: 250px;
+            }
 
-.whatsapp:hover {
-    transform: scale(1.1);
-}
+            /* WHATSAPP BUTTON */
+            .whatsapp {
+                width: 55px;
+                height: 55px;
+                font-size: 24px;
+            }
 
-.whatsapp i {
-    font-size: 28px;
-}
+            .client {
+                width: 90%;
+            }
+        }
 
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.7); }
-    70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
-    100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
-}
-@media (max-width: 768px) {
+        .clients {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 280px);
+            /* fixed size */
+            justify-content: center;
+            /* THIS is the key */
+            gap: 20px;
+        }
 
-    /* NAVBAR FIX */
-    .top-nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
+        .client {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            width: 280px;
+            text-align: center;
+            transition: 0.3s;
+        }
 
-    .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+        .client h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
 
-    .nav-links a {
-        margin: 5px 10px;
-        font-size: 14px;
-    }
+        .client p {
+            font-size: 13px;
+            color: #cbd5f5;
+        }
 
-    /* HERO FIX */
-    .hero {
-        padding: 20px;
-        height: auto;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-        line-height: 1.3;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-
-    /* SECTION FIX */
-    .section {
-        padding: 40px 15px;
-    }
-
-    /* CARDS FIX (IMPORTANT) */
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-        max-width: 300px;
-    }
-
-    /* GALLERY FIX */
-    .gallery {
-        gap: 10px;
-    }
-
-    .gallery img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* MAP FIX */
-    .map iframe {
-        width: 100%;
-        height: 250px;
-    }
-
-    /* WHATSAPP BUTTON */
-    .whatsapp {
-        width: 55px;
-        height: 55px;
-        font-size: 24px;
-    }
-}
-.clients {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.client {
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    border-radius: 12px;
-    width: 280px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.client h3 {
-    color: #38bdf8;
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-.client p {
-    font-size: 13px;
-    color: #cbd5f5;
-}
-
-.client:hover {
-    transform: translateY(-8px);
-    background: #1e293b;
-}
-.client {
-    width: 90%;
-}
-</style>
+        .client:hover {
+            transform: translateY(-8px);
+            background: #1e293b;
+        }
+    </style>
 </head>
 
 <body>
 
-<nav class="top-nav">
+    <nav class="top-nav">
 
-    <!-- LEFT SIDE (LOGO + NAME + TAGLINE) -->
-    <div class="brand">
-        <img src="logo.png" alt="Logo">
+        <!-- LEFT SIDE (LOGO + NAME + TAGLINE) -->
+        <div class="brand">
+            <img src="logo.png" alt="Logo">
 
-        <div>
-            <h1>Jay Ram Enterprise</h1>
-            <p>Your Trusted Manpower Partner</p>
+            <div>
+                <h1>Jay Ram Enterprise</h1>
+                <p>Your Trusted Manpower Partner</p>
+            </div>
         </div>
-    </div>
 
-    <!-- RIGHT SIDE (MENU) -->
-    <div class="nav-links">
-        <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'})">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#services">Our Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact Us</a>
-        <a href="#careers">Work With Us</a>
-    </div>
+        <!-- RIGHT SIDE (MENU) -->
+        <div class="nav-links">
+            <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'})">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Our Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#careers">Work With Us</a>
+        </div>
 
-</nav>
+    </nav>
 
-<section class="hero">
-    <h1>Reliable Manpower Solutions</h1>
-    <p>Loading, Unloading & Labour Contractor Services</p>
-    <button class="btn" onclick="document.getElementById('careers').scrollIntoView({behavior:'smooth'})">
-Apply Now
-</button>
-</section>
+    <section class="hero">
+        <h1>Reliable Manpower Solutions</h1>
+        <p>Loading, Unloading & Labour Contractor Services</p>
+        <button class="btn" onclick="document.getElementById('careers').scrollIntoView({behavior:'smooth'})">
+            Apply Now
+        </button>
+    </section>
 
-<section id="about" class="section">
-    <h2>About Us</h2>
-    <div class="about">
-    <p>
-        Jay Ram Enterprise provides skilled manpower for industrial, construction, and logistics work. 
-        We ensure reliable, disciplined, and hardworking labour for smooth business operations.
-    </p>
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <div class="about">
+            <p>
+                Jay Ram Enterprise provides skilled manpower for industrial, construction, and logistics work.
+                We ensure reliable, disciplined, and hardworking labour for smooth business operations.
+            </p>
 
-    <p style="margin-top:20px;">
-        Under the leadership of <strong>MANISH TIWARI</strong>, the company has built a strong reputation 
-        for trust, commitment, and quality service across Silvassa and nearby industrial areas.
-    </p>
+            <p style="margin-top:20px;">
+                Under the leadership of <strong>MANISH TIWARI</strong>, the company has built a strong reputation
+                for trust, commitment, and quality service across Silvassa and nearby industrial areas.
+            </p>
 
-    <p style="margin-top:10px;">
-        With a focus on long-term client relationships, we continue to deliver dependable manpower solutions 
-        to some of the region’s most respected companies.
-    </p>
-</div>
-<div style="text-align:center; margin-top:30px;">
-    <h3>Founder</h3>
-    <p style="color:#38bdf8; font-weight:600;">Manish Tiwari</p>
-</div>
-</section>
+            <p style="margin-top:10px;">
+                With a focus on long-term client relationships, we continue to deliver dependable manpower solutions
+                to some of the region’s most respected companies.
+            </p>
+        </div>
+        <div style="text-align:center; margin-top:30px;">
+            <h3>Founder</h3>
+            <p style="color:#38bdf8; font-weight:600;">Manish Tiwari</p>
+        </div>
+    </section>
 
-<section id="services" class="section">
-    <h2>Our Services</h2>
-    <div class="cards">
-        <div class="card">Loading & Unloading Services</div>
-        <div class="card">Helper Labour Supply</div>
-        <div class="card">Industrial Workforce</div>
-        <div class="card">Construction Labour</div>
-    </div>
-</section>
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">Loading & Unloading Services</div>
+            <div class="card">Helper Labour Supply</div>
+            <div class="card">Industrial Workforce</div>
+            <div class="card">Construction Labour</div>
+        </div>
+    </section>
 
 
-<section id="clients" class="section">
-    <h2>Our Trusted Clients</h2>
+    <section id="clients" class="section">
+        <h2>Our Trusted Clients</h2>
 
-    <p style="text-align:center; max-width:700px; margin:0 auto 30px; color:#cbd5f5;">
-        We are proud to provide reliable manpower services to some of the most respected companies across Silvassa and nearby industrial areas.
-    </p>
-  <div class="clients">
+        <p style="text-align:center; max-width:700px; margin:0 auto 30px; color:#cbd5f5;">
+            We are proud to provide reliable manpower services to some of the most respected companies across Silvassa
+            and nearby industrial areas.
+        </p>
+        <div class="clients">
+            <div class="client">
+                <h3>Recraft Processing Pvt. Ltd.</h3>
+                <p>Survey No. 328/1/1/2, Masat, DNH & DD – 396230</p>
+            </div>
+
+            <div class="client">
+                <h3>Amazon Plastics Pvt. Ltd.</h3>
+                <p>Survey No. 107/2/2/1, Naroli, DNH & DD – 396235</p>
+            </div>
+
+            <div class="client">
+                <h3>Chandal Steel Ltd.</h3>
+                <p>Umbergaon, District Valsad, Gujarat – 396171</p>
+            </div>
+
+            <div class="client">
+                <h3>Uno Formulation Ltd.</h3>
+                <p>Survey No. 363/2, Village Velugam, Silvassa, DNH & DD – 396230</p>
+            </div>
+
+            <div class="client">
+                <h3>Deon Tapes Industries</h3>
+                <p>Survey No. 200/83/1, B Nanji Industrial Area, Luheri Road, Silvassa, DNH & DD – 396230</p>
+            </div>
+
+            <div class="client">
+                <h3>E-Con Packaging Pvt. Ltd.</h3>
+                <p>Survey No. 1/1/3/1, Chinchpada, DNH & DD – 396240</p>
+            </div>
+
+            <div class="client">
+                <h3>Geep Industries</h3>
+                <p>Plot No. 70, Govt. Industrial Estate, Masat, Silvassa, DNH & DD – 396230</p>
+            </div>
+             <div class="client">
+            <h3>Galva Decoparts Pvt Ltd</h3>
+            <p>Plot No - 7, Survey No 91/Paiky 4, Zaroli, GJ – 396105</p>
+        </div>
+
         <div class="client">
-            <h3>Recraft Processing Pvt. Ltd.</h3>
-            <p>Survey No. 328/1/1/2, Masat, DNH & DD – 396230</p>
+            <h3>Virgin Craft Industries</h3>
+            <p>Plot No. 10, Survey No. 185/1/1, Dokmardi, Amli, Silvassa – 396230</p>
         </div>
 
-        <div class="client">
-            <h3>Amazon Plastics Pvt. Ltd.</h3>
-            <p>Survey No. 107/2/2/1, Naroli, DNH & DD – 396235</p>
         </div>
 
-        <div class="client">
-            <h3>Chandal Steel Ltd.</h3>
-            <p>Umbergaon, District Valsad, Gujarat – 396171</p>
-        </div>
-
-        <div class="client">
-            <h3>Uno Formulation Ltd.</h3>
-            <p>Survey No. 363/2, Village Velugam, Silvassa, DNH & DD – 396230</p>
-        </div>
-
-        <div class="client">
-            <h3>Deon Tapes Industries</h3>
-            <p>Survey No. 200/83/1, B Nanji Industrial Area, Luheri Road, Silvassa, DNH & DD – 396230</p>
-        </div>
-
-        <div class="client">
-            <h3>E-Con Packaging Pvt. Ltd.</h3>
-            <p>Survey No. 1/1/3/1, Chinchpada, DNH & DD – 396240</p>
-        </div>
-
-        <div class="client">
-            <h3>Geep Industries</h3>
-            <p>Plot No. 70, Govt. Industrial Estate, Masat, Silvassa, DNH & DD – 396230</p>
-        </div>
-    </div>
-</section>
-<section id="gallery" class="section">
-    <h2>Our Work</h2>
-    <div class="gallery">
-        <img src="team1.png">
-        <img src="team2.png">
-        <img src="team3.png">
-    </div>
-</section>
-
-  
-
-<section id="contact" class="section contact">
-    <h2>Contact Us</h2>
-    <p style="text-align:center;">
-📞 
-<a href="tel:9408687008" style="color:#38bdf8; text-decoration:none;">9408687008</a> | 
-<a href="tel:7383774166" style="color:#38bdf8; text-decoration:none;">7383774166</a>
-</p>
-    <p style="text-align:center;">
-📧 
-<a href="mailto:jayramenterprises25@yahoo.com" 
-   style="color:#38bdf8; text-decoration:none;">
-   jayramenterprises25@yahoo.com
-</a>
-</p>
-    <p>📍 Shop No 1, Survey No 1530, Near Lakhdatar Plywood, Lawacha Pipariya,Silvassa,DNH&DD,396230</p>
-
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.082904122614!2d72.9893754!3d20.296835299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0cdf34c6dd257%3A0x41725ea22e2c8d18!2sJAYRAM%20ENTERPRISE!5e0!3m2!1sen!2sin!4v1774898447626!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</section>
-<section id="careers" class="section" style="background:#020617; text-align:center;">
-    
-    <h2>Work With Us</h2>
-    
-    <p style="max-width:600px; margin:0 auto 20px; color:#cbd5f5;">
-        Looking for job opportunities? Join Jay Ram Enterprise and become part of a trusted manpower team. 
-        We value dedication, discipline, and hard work.
-    </p>
-
-    <a href="https://forms.gle/do55cvvBiSR78VaQ7" target="_blank" 
-       style="display:inline-block; padding:14px 30px; background:#38bdf8; color:#000; 
-       font-size:18px; border-radius:10px; text-decoration:none; font-weight:600;">
        
-       Apply Now 🚀
+    </section>
+    <section id="gallery" class="section">
+        <h2>Our Work</h2>
+        <div class="gallery">
+            <img src="team1.png">
+            <img src="team2.png">
+            <img src="team3.png">
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p style="text-align:center;">
+            📞
+            <a href="tel:9408687008" style="color:#38bdf8; text-decoration:none;">9408687008</a> |
+            <a href="tel:7383774166" style="color:#38bdf8; text-decoration:none;">7383774166</a>
+        </p>
+        <p style="text-align:center;">
+            📧
+            <a href="mailto:jayramenterprises25@yahoo.com" style="color:#38bdf8; text-decoration:none;">
+                jayramenterprises25@yahoo.com
+            </a>
+        </p>
+        <p>📍 Shop No 1, Survey No 1530, Near Lakhdatar Plywood, Lawacha Pipariya,Silvassa,DNH&DD,396230</p>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.082904122614!2d72.9893754!3d20.296835299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0cdf34c6dd257%3A0x41725ea22e2c8d18!2sJAYRAM%20ENTERPRISE!5e0!3m2!1sen!2sin!4v1774898447626!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section id="careers" class="section" style="background:#020617; text-align:center;">
+
+        <h2>Work With Us</h2>
+
+        <p style="max-width:600px; margin:0 auto 20px; color:#cbd5f5;">
+            Looking for job opportunities? Join Jay Ram Enterprise and become part of a trusted manpower team.
+            We value dedication, discipline, and hard work.
+        </p>
+
+        <a href="https://forms.gle/do55cvvBiSR78VaQ7" target="_blank" style="display:inline-block; padding:14px 30px; background:#38bdf8; color:#000; 
+       font-size:18px; border-radius:10px; text-decoration:none; font-weight:600;">
+
+            Apply Now 🚀
+        </a>
+
+    </section>
+    <footer>
+        <p>© 2026 Jay Ram Enterprise</p>
+    </footer>
+
+    <a class="whatsapp" href="https://wa.me/919408687008" target="_blank">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
-</section>
-<footer>
-    <p>© 2026 Jay Ram Enterprise</p>
-</footer>
-
-<a class="whatsapp" href="https://wa.me/919408687008" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<script>
-function scrollToContact() {
-    document.getElementById("contact").scrollIntoView({behavior:"smooth"});
-}
-</script>
+    <script>
+        function scrollToContact() {
+            document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
 
 </body>
+
 </html>
